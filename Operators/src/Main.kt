@@ -45,11 +45,39 @@ fun main(args : Array<String>){
     println("q = ${++q}") // brackets{} should be used or it shows error
     println("q = ${q--}")
     println("q = ${--q}")
-
-    val isActive = true
-    if (isActive == true)
+    // if else
+    val isActive = true // True - case-sensitive
+    if (!isActive)// !(not equal to means it prints the else part)
     {
         println("The user is active")
     }
-
+    else
+    {
+        println("The user is not active")
+    }
+    // if else if
+    val myNumber = 10
+    if(myNumber>=100){
+        println("The number is greater than or equal to  100")
+    }
+    else if (myNumber>90){
+        println("The number is greater than 90")
+    }
+    else{
+        println("All the conditions failed!!")
+    }
+    // <,>,<=,>= operators
+    val marks = 90
+    if(marks<=35){
+        println("SORRY YOU DID NOT PASS!! BETTER LUCK NEXT TIME")
+    }
+    else if(marks>35){
+        println("YOU PASSED!! CONGRATULATIONS")
+    }
+    else if(marks!=100){
+        println("NOT A CENTUM ")
+    }
+    else if(marks==100){
+        println("CENTUM!!")
+    }
 }
